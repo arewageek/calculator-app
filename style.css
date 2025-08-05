@@ -1,0 +1,30 @@
+.calculator button {
+  width: 32%;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 20px;
+}
+.calculator {
+  width: 300px;
+  margin: 20px;
+  border: 2px solid black;
+  font-size: 15px;
+}
+
+.calculator div {
+  width: 100%;
+  display: flex;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.equal-btn {
+  background-color: deepskyblue;
+}

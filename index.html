@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./calculator.js"></script>
+  </head>
+  <body>
+    <form action="https://google.com/search">
+      <input type="text" name="q" />
+      <button type="submit">Search</button>
+    </form>
+    <form>
+      Email<input name="email" type="email" /> <br />
+      Password<input name="password" type="password" /><br />
+      <button type="submit">Submit</button>
+      <button type="button" onclick="javscript:history.back();">
+        Previous step
+      </button>
+      <button>Blank</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <!-- create a calculator ui -->
+    <form>
+      <input type="text" height="70" weidth="40" />
+      <label as="numbers"></label>
+    </form>
+    <!--  -->
+
+    <div class="calculator">
+      <div>
+        <input id="output" type="number" disabled />
+      </div>
+      <div>
+        <button onclick="input(1)">1</button>
+        <button onclick="input(2)">2</button>
+        <button onclick="input(3)">3</button>
+        <button onclick="operate('add')">+</button>
+      </div>
+      <div>
+        <button onclick="input(4)">4</button>
+        <button onclick="input(5)">5</button>
+        <button onclick="input(6)">6</button>
+        <button onclick="operate('subtract')">-</button>
+      </div>
+      <div>
+        <button onclick="input(7)">7</button>
+        <button onclick="input(8)">8</button>
+        <button onclick="input(9)">9</button>
+        <button onclick="reset()">CLR</button>
+      </div>
+      <div>
+        <button onclick="input(0)">0</button>
+        <button onclick="operate('multiply')">*</button>
+        <button onclick="operate('divide')">/</button>
+        <button onclick="equalTo()" class="equal-btn">=</button>
+      </div>
+    </div>
+  </body>
+</html>
