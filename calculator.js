@@ -43,3 +43,38 @@ function reset() {
   const output = document.getElementById("output");
   output.value = "";
 }
+
+// let i = 10;
+
+// while (i < 4) {
+//   console.log("Value of I is " + i);
+//   i++;
+// }
+
+// // while (condition) {
+// //   // code
+// //   // increment
+// // }
+
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 10);
+
+// for (variable; condition; increment) {
+//   //   code;
+// }
+
+for (var i = 10; i > -3; i--) {
+  console.log(i);
+  if (i >= 5) {
+    continue;
+  }
+}
+
+const submit = confirm("Are you sure you want to submit?");
+if (submit) {
+  alert("Submitted successfully");
+} else {
+  alert("Submission cancelled");
+}
